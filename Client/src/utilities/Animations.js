@@ -1,4 +1,5 @@
 export default class Animations {
+  /* SINGLETON CLASS INSTANCE */
   static animations = new Animations();
 
   fadeInScreen = (screen_name) => {

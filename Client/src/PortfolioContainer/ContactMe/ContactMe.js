@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Typical from "react-typical";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 import imgBack from "../../../src/images/mailz.jpeg";
 import load1 from "../../../src/images/load2.gif";
@@ -10,7 +12,7 @@ import "./ContactMe.css";
 
 export default function ContactMe(props) {
   let fadeInScreenHandler = (screen) => {
-    if (screen.fadeScreen !== props.id) return;
+    if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
   const fadeInSubscription =
@@ -32,10 +34,33 @@ export default function ContactMe(props) {
     setMessage(e.target.value);
   };
   console.log(name);
+  const submitForm = async (e) => {
+    e.preventDefault();
+    try {
+      let data = {
+        name,
+        email,
+        message,
+      };
+      setBool(true);
+      const res = await axios.post("/contact", data);
+      if (name.length === 0 || email.length === 0 || message.length === 0) {
+        setBanner(res.data.msg);
+        toast.error(res.data.msg);
+        setBool(false);
+      } else if (res.status === 200) {
+        setBanner(res.data.msg);
+        toast.success(res.data.msg);
+        setBool(false);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div className="main-container" id={props.id || ""}>
-      <ScreenHeading subHeading={"lets keep in Touch"} title={"contactMe"} />
+      <ScreenHeading subHeading={"lets keep in Touch"} title={"Contact Me"} />
       <div className="central-form">
         <div className="col">
           <h2 className="title">
@@ -63,7 +88,7 @@ export default function ContactMe(props) {
             <h4>Send Your Email Here!</h4>
             <img src={imgBack} alt="image not found" />
           </div>
-          <form>
+          <form onSubmit={submitForm}>
             <p>{banner}</p>
             <label htmlFor="name">Name</label>
             <input type="text" onChange={handleName} value={name} />
@@ -78,6 +103,13 @@ export default function ContactMe(props) {
               <button type="submit">
                 send
                 <i className="fa fa-paper-plane" />
+                {bool ? (
+                  <b className="load">
+                    <img src={load1} alt="image not responding" />
+                  </b>
+                ) : (
+                  ""
+                )}
               </button>
             </div>
           </form>

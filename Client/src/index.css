@@ -82,12 +82,12 @@ body ::-webkit-scrollbar-thumb {
 }
 
 .btn {
-  border-radius: 50px;
+  border-radius: 15px;
   padding: 14px 0;
   width: 160px;
   cursor: pointer;
   transition: 0.2s;
-  font-family: "Poppins SemiBold";
+  font-family: "Poppins Bold";
 }
 
 .btn:active {
@@ -108,16 +108,25 @@ body ::-webkit-scrollbar-thumb {
 
 .primary-btn:hover {
   color: aliceblue;
-  border: 2px solid #ff5823;
+  border: 2px solid rgba(93, 72, 199, 1);
   background-color: #1f2235;
+  font-size: 15px;
 }
 
 .highlighted-btn {
   color: var(--white);
 
   font-size: 12px;
-  background-color: #ff5823;
+  background-color: rgba(93, 72, 199, 1);
 }
+
+.highlighted-btn:hover {
+  color: var(--white);
+
+  font-size: 15px;
+  background-color: rgba(93, 72, 199, 1);
+}
+
 @media only screen and (max-width: 568px) {
   .highlighted-btn {
     z-index: -900;

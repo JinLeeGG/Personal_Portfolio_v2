@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+:root {
+  --gullible-font: "Maven Pro", sans-serif;
+  --robotomono-font: "Roboto Mono", monospace;
+}
+
 .profile-container {
   display: flex;
   align-items: center;
@@ -26,7 +32,7 @@
 
 .profile-details-role h1 {
   font-size: 40px;
-  font-family: cursive;
+  font-family: var(--robotomono-font);
 }
 
 .primary-text {
@@ -34,7 +40,7 @@
 }
 
 .highlighted-text {
-  color: var(--dark-orange);
+  color: deepskyblue;
 }
 
 .profile-role-tagline {

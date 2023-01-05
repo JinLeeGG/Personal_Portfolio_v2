@@ -27,12 +27,12 @@
 
 .about-me-details {
   width: 48%;
-  text-align: justify;
+  text-align: left;
   padding: 30px;
 }
 
 .about-me-description {
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .about-me-highlights {
@@ -41,7 +41,7 @@
 
 .highlight-heading {
   font-family: "Poppins Bold";
-  font-size: 14px;
+  font-size: 18px;
   margin: 0 0 5px 0;
 }
 

@@ -69,7 +69,7 @@ export default function Resume(props) {
   const projectsDetails = [
     {
       title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
+      duration: { fromDate: "2022", toDate: "2023" },
       description:
         "A Personal Portfolio website to showcase all my details and projects at one place.",
       subHeading: "Technologies Used: React JS, Bootsrap",
@@ -120,21 +120,38 @@ export default function Resume(props) {
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Math 170 - Singlevariable Calculus class in Dickinson College
-            provided by Prof. Mixell
-          </span>
-        </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-            - Provided additional support and instruction to over 30 students in
+            Provided additional support and instruction to over 30 students in
             Calculus I course during the Math helproom sessions. Assisting the
             professor in grading assignments and lab.
           </span>
-          <br />
+        </div>
+      </div>
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"Resident Advisor"}
+          subHeading={"DICKINSON COLLEGE"}
+          fromDate={"2022"}
+          toDate={"Present"}
+        />
+        <div className="experience-description">
           <span className="resume-description-text">
-            - Assisting the professor in grading assignments and lab.
+            Provided support and guidance to residents, served as a resource for
+            information about campus services and resources.wrote monthly
+            newsletters and conducted social events for the resident.
           </span>
-          <br />
+        </div>
+      </div>
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"Full Time Clerk"}
+          subHeading={"Hyosung PC Internet Cafe"}
+          fromDate={"2021 May"}
+          toDate={"2021 August"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">
+            Maintain accurate records of logs and inventories of the shop.
+          </span>
         </div>
       </div>
     </div>,

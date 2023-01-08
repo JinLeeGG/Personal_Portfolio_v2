@@ -45,7 +45,7 @@ export default function Resume(props) {
     { label: "Education", logoSrc: "education.svg" },
     { label: "Work History", logoSrc: "work-history.svg" },
     { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-    { label: "Projects", logoSrc: "projects.svg" },
+    { label: "Achievements", logoSrc: "projects.svg" },
     { label: "Interests", logoSrc: "interests.svg" },
   ];
 
@@ -68,27 +68,18 @@ export default function Resume(props) {
 
   const projectsDetails = [
     {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2022", toDate: "2023" },
+      title: "Math and CS Club",
+      duration: { fromDate: "2022", toDate: "Present" },
       description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
+        "Managing the club's communications, including sending out announcements, newsletters, and other updates to members. Coordinating and scheduling club events, such as guest speakers, workshops, and social activities.",
+      subHeading: "Secretary",
     },
     {
-      title: "Mobile E-shop ",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "CS and Math Major's Committee",
+      duration: { fromDate: "2022", toDate: "Present" },
       description:
-        "An ecommerce application designed to sell products online wth payment system integration",
-      subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
-    },
-    {
-      title: "Ecommerce Website ",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
-      subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+        "Participated in the CS and Math Department's major's Committee, helping to update and modernize the curriculum to better prepare students for the workforce. Contributed to the development of new course offerings and assisted in the review of professor's work and resources.",
+      subHeading: "Member",
     },
   ];
 

@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   margin: 0;
+  margin-bottom: 10%;
 }
 
 .highlighted-btn1 {
@@ -37,16 +38,16 @@
 }
 
 .projects__container {
-  width: 40%;
+  width: 88%;
   padding-bottom: 4rem;
 }
 .project_img {
-  width: 25rem;
+  width: 40rem;
   height: auto;
   aspect-ratio: 1.4/1;
   overflow: hidden;
   border-radius: 10%;
-  margin: 0 auto 1rem;
+  margin: 0 auto 2rem;
   box-shadow: 0 0px 40px 3px rgb(76 56 252 / 40%);
 }
 
@@ -80,7 +81,7 @@
   margin-bottom: 0.8rem;
 }
 .swiper-pagination-clickable .swiper-pagination-bullet-active {
-  background: skyblue;
+  background: rgba(93, 72, 199, 1);
 }
 
 @media (hover: none) {

@@ -83,4 +83,9 @@
     left: 0;
     opacity: 1;
   }
+  .header-logo {
+    font-size: 35px;
+    font-family: "Poppins ExtraBold";
+    color: var(--white);
+  }
 }

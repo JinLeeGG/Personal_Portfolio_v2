@@ -60,7 +60,10 @@ export default function ContactMe(props) {
 
   return (
     <div className="main-container" id={props.id || ""}>
-      <ScreenHeading subHeading={"lets keep in Touch"} title={"Contact Me"} />
+      <ScreenHeading
+        subHeading={"Send a message to me!"}
+        title={"Contact Me"}
+      />
       <div className="central-form">
         <div className="col">
           <h2 className="title">
@@ -83,7 +86,21 @@ export default function ContactMe(props) {
         <div className="back-form">
           <div className="img-back">
             <h4>Send Your Email Here!</h4>
-            <img src={imgBack} alt="image not found" />
+            <img className="img1" src={imgBack} alt="image not found" />
+            <div className="contactinfo">
+              <div class="contact_title">Call Me 📱</div>
+              <div class="contact_subtitle">+1 (717) 961-8258 </div>
+            </div>
+            <div className="contactinfo">
+              <div class="contact_title">E-mail ✉️</div>
+              <div class="contact_subtitle">leejo@dickinson.edu</div>
+            </div>
+            <div className="contactinfo">
+              <div class="contact_title">Address 🏠</div>
+              <div class="contact_subtitle">
+                Pohang-si Buk-gu, Gyeonsangbuk-do - South Korea
+              </div>
+            </div>
           </div>
           <form onSubmit={submitForm}>
             <p>{banner}</p>

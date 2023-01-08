@@ -14,7 +14,28 @@
   margin: 0 auto;
   flex-direction: column;
   justify-content: center;
-  background-color: #1f2235;
+  background-color: rgb(45, 34, 99);
+}
+
+.img1 {
+  margin-bottom: 4%;
+}
+
+.contactinfo {
+  margin-bottom: 10%;
+}
+
+.contact_title {
+  margin-left: 5%;
+  font-family: monospace;
+  color: ivory;
+  font-size: 20px;
+}
+
+.contact_subtitle {
+  margin-left: 5%;
+  font-family: monospace;
+  color: ivory;
 }
 
 .central-form h2 {
@@ -44,7 +65,7 @@
 
 .back-form .img-back img {
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .central-form form {
@@ -55,7 +76,7 @@
   padding: 15px;
   justify-content: center;
   flex-direction: column;
-  margin-top: -52px;
+  margin-top: 40px;
   opacity: 0.9;
   background-color: white;
   box-shadow: 0 0px 20px -2px #1f2235;
@@ -65,7 +86,7 @@
 form p {
   text-align: center;
   margin-bottom: 10px;
-  color: #ff5823;
+  color: rgba(93, 72, 199, 1);
   letter-spacing: 0.1rem;
   font-family: "Poppins Bold";
 }
@@ -104,7 +125,7 @@ form button {
   outline: none;
   width: 900px;
   color: rgb(230, 227, 227);
-  border: 2px solid #ff5823;
+  border: 2px solid rgb(72, 110, 199);
   font-size: 12px;
   border-radius: 19px;
   background-color: #1f2235;
@@ -148,7 +169,7 @@ button .load img {
   .img-back {
     flex: 1;
     align-self: center;
-    margin-right: 20px;
+    margin-right: 40px;
   }
 
   form {

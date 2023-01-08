@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import IMG1 from "../../assets/Project/portfolioV1_demo.jpg";
 import IMG2 from "../../assets/Project/portfolioV2_demo.jpg";
-import IMG3 from "../../assets/Project/laptop-2620118_1920.jpg";
+import IMG3 from "../../assets/Project/bg1.jpg";
 
 const projectsDetails = [
   {

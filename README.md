@@ -1,6 +1,6 @@
 ﻿## Personal_Portfolio-v2
 
-This is my Second Portfolio website.
+This is my second portfolio website. I used React Js, Node js, and Bootstrap to build it
 
 ## Getting Started
 
